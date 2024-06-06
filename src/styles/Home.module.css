@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.container {
+    background-color: var(--bg-color);
+    height: 100vh;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6rem 4.1rem 0 3.3rem;
+}
+
+.boxInfos {
+    width: 32.4rem;
+    height: 13.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #29292E;
+    border-radius: 21px;
+    gap: 4rem;
+    margin: 0 3.3rem;
+}
+
+.selfInfos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.selfInfos span {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.selfInfos p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.personalInfos {
+    color: #C5C1C1;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-right: 7.5rem;
+    line-height: 2.5rem;
+}
+
+.personalInfos span {
+    color: #FFF;
+    font-size: 2.5rem;
+}
+
+.title {
+    color: #FFF;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 4rem 3.3rem;
+}
+
+.weekCheck {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subtitle {
+    color: #FFF;
+    font-weight: 500;
+    align-self: flex-start;
+    margin: 3.3rem 0 1.3rem 3.3rem;
+}
