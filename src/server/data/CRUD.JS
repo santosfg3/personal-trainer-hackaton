@@ -3,7 +3,7 @@ import { getMongoCollection } from "./mongodb";
 const db = "ulissesdb";
 const COLLECTION = "users";
 const COLLECTION1 = "horasMarcadas";
-const COLLECTION2 = "horasDisponiveisUlisses"
+const COLLECTION2 = "horas"
 
 // export async function insertEvent(data) {
 //   const collection = await getMongoCollection(db, COLLECTION2);
@@ -27,6 +27,7 @@ export async function findAllUsersHour() {
   const result = await collection.find().toArray();
   return result;
 }
+
 export async function findAllUlissesHour() {
   const collection = await getMongoCollection(db, COLLECTION2);
   const result = await collection.find().toArray();
@@ -43,6 +44,18 @@ export async function findUserById(id) {
     return result;
   }
   return null;
+}
+
+export async function update(id) {
+  console.log(id)
+    
+    const collection = await getMongoCollection(db, COLLECTION2);
+    const result = await collection.updateOne({ _id: new ObjectId(String(id)) },
+  {$set: {marcado: true}}
+  
+  );
+
+    return result;
 }
 
 //11

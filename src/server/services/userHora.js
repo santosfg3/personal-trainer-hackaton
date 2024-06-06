@@ -9,11 +9,17 @@ export async function userEvents() {
     userId: e.userId
   }));
 }
-export async function ulissesEvents() {
+
+
+export async function ulissesEvents(weekDay) {
   const horasMarcadas = await findAllUlissesHour();
-  return horasMarcadas.map((e) => ({
+  return horasMarcadas.filter((e) => (
+    weekDay === e.diaDaSemana &&
+    {
     horas: e.horas,
     diaDaSemana: e.diaDaSemana,
-    dia: e.dia
+    diaDoMes: e.diaDoMes
   }));
+
+  
 }

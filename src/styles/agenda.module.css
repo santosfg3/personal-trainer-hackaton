@@ -1,10 +1,123 @@
-.button {
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    background-color: black;
+}
+
+.containerButtons {
+    display: flex;
+    gap: 20px;
+ 
+}
+
+.notPressedButton{
     height: 40px;
-    background-color: #32f132;
-    color: black;
+    
+    color: #29292E;
     font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    flex-direction: row;
+    gap: 10px; 
+    padding:1rem;
 }
+.button {
+    height: 40px;
+    background-color: #29E33C;
+    color: #29292E;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    flex-direction: row;
+    gap: 10px;
+    padding: 1rem; 
+}
+.booked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #29292E;
+    width: 200px;
+    height: 40px;
+    border: solid;
+    border-color: rgb(128, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;   
+}
+.horas {
+    background-color: #29292E;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.fatherContainer{
+    display: flex;
+
+}
+  .containerPlusConfirmed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #29292E;
+    width: 200px;
+    height: 40px;
+    border: solid;
+    border-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+.confirm {
+    background-color: #29E33C;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 100%;
+    border: none;
+}
+
+.aulaMarcada{
+ background-color: white;
+}
+ /* .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    width: 300px;
+    height: 40px;
+  } */
+  
+
+  
+  /* .confirm{
+    background-color: green;
+    height: 40px;
+    width: 70px;
+    border: none;
+  } */
+  
