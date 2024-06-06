@@ -1,0 +1,125 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(
+      to bottom,
+      rgba(28, 28, 30, 0) 0%,
+      rgba(28, 28, 30, 0.8) 50%,
+      #000000 100%
+    ), 
+    url("/assets/background-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 158px;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    width: 270px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .label {
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button {
+    width: 100%;
+    padding: 10px;
+    background: #29e33c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .button2 {
+    width: 270px;
+    padding: 10px;
+    background: #29e33c;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .button2:hover {
+    background-color: #3e8e41;
+  }
+  
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+  }
+  
+  .blackBackground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 222px;
+    background: linear-gradient(to top, #000000, #252424);
+    z-index: -1;
+  }
+  
+  .subTitle {
+    color: var(--Platform-Aliases-Ttulos, #e1e1e6);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 32px */
+    width: 348px;
+  }
+  
+  .input:focus {
+    outline: 2px solid #4caf50; /* Adapte a cor conforme necessário */
+    outline-offset: 2px;
+  }
+  
+  .createAccountButton {
+    background-color: #2196f3; /* Adapte a cor conforme necessário */
+  }
+  
+  .createAccountButton:hover {
+    background-color: #0b7dda; /* Adapte a cor conforme necessário */
+  }
+  
