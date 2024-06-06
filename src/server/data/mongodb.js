@@ -13,9 +13,9 @@ async function connectToMongo() {
   }
 }
 
-async function getMongoCollection(ulissesPT, users) {
+async function getMongoCollection(ulissesdb, horasMarcadas) {
   const client = await connectToMongo();
-  return client.db(ulissesPT).collection(users);
+  return client.db(ulissesdb).collection(horasMarcadas);
 }
 
 module.exports = { getMongoCollection };

@@ -6,11 +6,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div>
-      {/* <Calendario01/> */}
-      <SignUp/>
-     
-    </div>
-    
+ <div>
+
+ </div>
   );
 }

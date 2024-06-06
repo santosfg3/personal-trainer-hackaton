@@ -1,4 +1,4 @@
-import { findUserByEmail } from "../data/CRUD";
+import { findUserByEmail, findUserById } from "../data/CRUD";
 
 export async function getUserByEmail(email) {
   const result = await findUserByEmail(email);
@@ -14,3 +14,11 @@ export async function createDataUser({ email, password }) {
     password: password,
   };
 }
+
+export async function user(id) {
+  const result = await findUserById(id);
+  if (result === null) return false;
+
+  return result;
+}
+
