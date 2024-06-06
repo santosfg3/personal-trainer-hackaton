@@ -2,26 +2,6 @@
 
 import { createUser, findUserByEmail } from "@/server/data/CRUD";
 
-// export default async (req, res) => {
-//   if (req.method === "POST") {
-//     const { name, email, password } = req.body; // Ajustar aqui para 'name'
-//     console.log(req.body);
-//     console.log(await findUserByEmail(email));
-//     if ((await findUserByEmail(email)) === null) {
-//       try {
-//         const result = await createUser({ name, email, password }); // Use 'name' em vez de 'nome'
-//         res.status(200).json({ result });
-//       } catch (error) {
-//         console.error("Erro ao criar usuário:", error);
-//         res.status(500).json({ message: "Erro ao criar usuário." });
-//       }
-//     } else {
-//       res.status(400).json({ message: "E-mail já está sendo usado." });
-//     }
-//   } else {
-//     res.status(405).json({ message: "Método não permitido." });
-//   }
-// };
 
 
 export default async function handler(req, res) {

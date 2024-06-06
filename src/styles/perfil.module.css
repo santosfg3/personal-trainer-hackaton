@@ -1,0 +1,111 @@
+.profileContainer {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profileHeader {
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-top: 6.3rem;
+}
+
+.profilePic {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  border: 2px solid #29e33c;
+  background-image: url("/assets/fotoPerfil.png");
+  background-color: lightgray;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+ 
+}
+
+.changePhoto {
+  color: #29e33c;
+  cursor: pointer;
+  font-size: 1.5em;
+  width: 85px;
+  justify-content: center;
+  align-items: center;
+   margin-top: 1.1rem;
+}
+
+.form {
+  width: 328px;
+  padding: 16px;
+  align-items: center;
+  gap: 8px;
+  padding-right: 30px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.7em;
+  height: 24px;
+  color: #c4c4cc;
+  font-family: "Poppins",sans-serif;
+  background-color: rgb(35, 34, 34);
+ 
+
+}
+
+.numericContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.numericBox {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  width: 25%;
+  text-align: center;
+  display: flex;
+  
+}
+
+.numericInput {
+  background: none;
+  border: none;
+  color: #C4C4CC;
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+}
+.label{
+    font-size: 1.2em;
+    padding-top: 5px;
+}
+.buttonLogOut {
+  display: flex;
+  width: 328px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: #29e33c;
+  margin-top: 35px;
+}
+
+.buttonLogOut:active {
+  background-color: #3e8e41;
+}
