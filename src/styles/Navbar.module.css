@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    position: fixed;
+    bottom: 0.5rem; 
+    border-radius: 9999px; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7rem; 
+    width: 90%; 
+    margin: 1rem auto; 
+    background-color: #202024; 
+}
+
+.navItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem; 
+    width: 4rem; 
+    cursor: pointer;
+}

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.trainingweek {
+    width: 32.4rem;
+    height: 8.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    border-radius: 21px;
+    background: #29292E;
+}
+
+.trainingday {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem; 
+    height: 3rem; 
+    border-radius: 50%; 
+    background-color: #A5A5A7; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bullet {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #A5A5A7;
+}
+
+.days {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.trainingday svg {
+    width: 2.95rem; /* Tamanho do ícone de check */
+    height: 2.95rem;
+    color: #28a745; /* Cor do ícone de check */
+}

@@ -2,6 +2,7 @@
 
 import { createUser, findUserByEmail } from "@/server/data/CRUD";
 
+<<<<<<< HEAD
 export default async (req, res) => {
   if (req.method === "POST") {
     const { name, email, password } = req.body; // Ajustar aqui para 'name'
@@ -14,6 +15,24 @@ export default async (req, res) => {
       } catch (error) {
         console.error("Erro ao criar usuário:", error);
         res.status(500).json({ message: "Erro ao criar usuário." });
+=======
+
+
+export default async function handler(req, res) {
+  if (req.method === 'POST') {
+    const { name, email, password } = req.body;
+
+    // Validação dos campos no backend
+    if (!name || !email || !password) {
+      return res.status(400).json({ message: 'All fields are required.' });
+    }
+
+    try {
+      const result = await createUser({ name, email, password });
+
+      if (!result) {
+        return res.status(400).json({ message: 'Error creating user.' });
+>>>>>>> 76b846c6ab61b7b1ee3d0e9eb5c318dece2693e6
       }
     } else {
       res.status(400).json({ message: "E-mail já está sendo usado." });

@@ -74,7 +74,3 @@ export async function insertEvent(data) {
   const result = await collection.insertOne(data);
   return result.insertedId;
 }
-
-
-
-

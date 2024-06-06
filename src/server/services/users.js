@@ -21,4 +21,3 @@ export async function user(id) {
 
   return result;
 }
-
