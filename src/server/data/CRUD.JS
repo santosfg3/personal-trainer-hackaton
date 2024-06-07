@@ -51,7 +51,7 @@ export async function update(id) {
     
     const collection = await getMongoCollection(db, COLLECTION2);
     const result = await collection.updateOne({ _id: new ObjectId(String(id)) },
-  {$set: {marcado: true}, }
+  {$set: {marcado: true}}
   
   );
 

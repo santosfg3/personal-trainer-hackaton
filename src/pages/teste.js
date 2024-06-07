@@ -2,11 +2,11 @@ import CardAgendamento from "@/components/CardAgendamento"
 import Navbar from "@/components/Navbar"
 
 export default function Teste() {
-    const userID = 1
+    const userId = 1
     return (
         <div>
             <div>
-                <CardAgendamento userID={userID}/>
+                <CardAgendamento userId={userId}/>
             </div>
             <div>
                 <Navbar />

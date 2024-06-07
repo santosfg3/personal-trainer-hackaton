@@ -1,5 +1,3 @@
-// pages/signup.js
-
 import style from '../styles/signup.module.css';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
@@ -9,23 +7,22 @@ export default function SignUp() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-  const [success, setSuccess] = useState(''); // Novo estado para mensagem de sucesso
+  const [success, setSuccess] = useState(''); 
   const [showLogin, setShowLogin] = useState(false);
   const router = useRouter();
 
   const handleSignup = async (e) => {
     e.preventDefault();
     setError('');
-    setSuccess(''); // Reseta a mensagem de sucesso
+    setSuccess(''); 
 
-    // Validação no frontend
     if (!name || !email || !password) {
       setError('All fields are required.');
       return;
     }
 
     try {
-      const res = await fetch('/api/auth/signup.json', {
+      const res = await fetch('/api/auth/signUp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,19 +32,15 @@ export default function SignUp() {
       const data = await res.json();
 
       if (res.ok) {
-        // Se o usuário for criado com sucesso, define a mensagem de sucesso
         setSuccess('Signup successful! You will be redirected to your profile.');
-        // Limpa os campos do formulário
         setName('');
         setEmail('');
         setPassword('');
 
-        // Redireciona para a página de perfil após um curto atraso
         setTimeout(() =>
-          router.push('/profile')
+          router.push('/home')
           , 2000) // 2 segundos de atraso
       } else {
-        // Se ocorrer algum erro durante a criação do usuário, defina a mensagem de erro
         setError(data.message || 'An error occurred. Please try again.');
       }
     } catch (error) {
@@ -95,7 +88,7 @@ export default function SignUp() {
 
       <div className={style.blackBackground}></div>
       <div className={style.footer}>
-        <button className={style.button2} onClick={() => router.push('/login')}>
+        <button className={style.buttonCreate} onClick={() => router.push('/login')}>
           Voltar para o login
         </button>
       </div>

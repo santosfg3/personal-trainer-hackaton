@@ -70,8 +70,8 @@ function Login() {
       <div className={style.blackBackground}></div>
       <div className={style.footer}>
         <p>Ainda não tem acesso?</p>
-        <button className={style.button2} onClick={() => router.push('/signup')}>
-          Criar uma conta
+        <button className={style.buttonCreate} onClick={() => router.push('/signup')}>
+          Criar conta
         </button>
       </div>
     </div>
