@@ -25,7 +25,7 @@ function Login() {
 
     if (res.status === 200) {
       // Sucesso
-      router.push('/Home'); 
+      router.push('/home'); 
     } else {
       // Erro
       setError(data.message);

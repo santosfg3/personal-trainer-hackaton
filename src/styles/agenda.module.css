@@ -1,123 +1,162 @@
 .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5rem;
-    background-color: black;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  padding-bottom: 110px;
 }
 
 .containerButtons {
-    display: flex;
-    gap: 20px;
- 
+  display: flex;
+  gap: 20px;
+}
+.profileHeader {
+  font-size: 3em;
+  margin-bottom: 20px;
+  margin-top: 6.3rem;
+  color: #f7f8fa;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 111.5%; /* 27.875px */
 }
 
-.notPressedButton{
-    height: 40px;
-    
-    color: #29292E;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    flex-direction: row;
-    gap: 10px; 
-    padding:1rem;
+.notPressedButton {
+  height: 40px;
+
+  color: #29292e;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  flex-direction: row;
+  gap: 10px;
+  padding: 1rem;
 }
 .button {
-    height: 40px;
-    background-color: #29E33C;
-    color: #29292E;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    flex-direction: row;
-    gap: 10px;
-    padding: 1rem; 
+  height: 40px;
+  background-color: #29e33c;
+  color: #29292e;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  flex-direction: row;
+  gap: 10px;
+  padding: 1rem;
 }
 .booked {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: #29292E;
-    width: 200px;
-    height: 40px;
-    border: solid;
-    border-color: rgb(128, 0, 0);
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #29292e;
+  width: 324px;
+  height: 42px;
+  border: solid;
+  border-color: rgb(128, 0, 0);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
 }
 .horas {
-    background-color: #29292E;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    height: 40px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  background-color: #29292e;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 324px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.fatherContainer{
-    display: flex;
-
+.fatherContainer {
+  display: flex;
 }
-  .containerPlusConfirmed{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    background-color: #29292E;
-    width: 200px;
-    height: 40px;
-    border: solid;
-    border-color: green;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
+.containerPlusConfirmed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: #29292e;
+  width: 324px;
+  height: 42px;
+  border: solid;
+  border-color: green;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
 
 .confirm {
-    background-color: #29E33C;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 100%;
-    border: none;
+  background-color: #29e33c;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 100%;
+  border: none;
 }
 
-.aulaMarcada{
- background-color: white;
+.aulaMarcada {
+  display: flex;
+  width: 300px;
+  height: 150px;
+  padding: 50px 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: #29292e;
 }
- /* .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: black;
-    width: 300px;
-    height: 40px;
-  } */
-  
+.inforConfirmation {
+  color: var(--Neutral-Colors-White, var(--Primaty-color, #fff));
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+}
 
-  
-  /* .confirm{
-    background-color: green;
-    height: 40px;
-    width: 70px;
-    border: none;
-  } */
-  
+.buttonGroup {
+  display: flex;
+}
+
+.buttonBox {
+  background-color: #5b5b5f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px; /* Adicionando um espaço entre os botões */
+  flex-grow: 1; /* Os botões ocuparão todo o espaço disponível */
+  max-width: calc(
+    50% - 5px
+  ); /* Cada botão ocupará metade do espaço disponível */
+}
+
+.buttonBox:last-child {
+  margin-right: 0; /* Removendo a margem direita do último botão */
+}
+
+/* Mudando as cores quando um botão estiver ativo */
+.buttonBox.active {
+  background-color: #29e33c;
+}

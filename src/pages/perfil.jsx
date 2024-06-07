@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/perfil.module.css";
 import useAnimateValue from "../pages/hooks/useAnimateValue";
+import Navbar from "@/components/Navbar";
 
 const Perfil = () => {
     useAnimateValue('peso', 0, 70, 2000);
@@ -34,6 +35,7 @@ const Perfil = () => {
                 </div>
             </div>
                 <div><button className={styles.buttonLogOut} >Logout</button></div>
+                <Navbar/>
         </div>
     );
 }
