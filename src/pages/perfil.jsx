@@ -100,7 +100,7 @@ const Perfil = () => {
           value={formData.name}
           onChange={handleChange}
           placeholder="Nome"
-          
+
         />
         <input
           className={styles.formInput}
@@ -110,7 +110,7 @@ const Perfil = () => {
           id="email"
           value={formData.email}
           onChange={handleChange}
-          
+
         />
         <input
           className={styles.formInput}
@@ -120,7 +120,7 @@ const Perfil = () => {
           id="telefone"
           value={formData.telefone}
           onChange={handleChange}
-          
+
         />
 
         <div className={styles.numericContainer}>
@@ -133,10 +133,10 @@ const Perfil = () => {
               placeholder="0"
               value={formData.peso}
               onChange={handleChange}
-              
+
             />
             <label className={styles.label} htmlFor="peso">
-              Kg
+              KG
             </label>
           </div>
           <div className={styles.numericBox}>
@@ -148,7 +148,7 @@ const Perfil = () => {
               placeholder="0"
               value={formData.altura}
               onChange={handleChange}
-              
+
             />
             <label className={styles.label} htmlFor="altura">
               cm
@@ -163,7 +163,7 @@ const Perfil = () => {
               placeholder="0"
               value={formData.idade}
               onChange={handleChange}
-              
+
             />
             <label
               className={styles.label}
@@ -179,14 +179,16 @@ const Perfil = () => {
             Salvar
           </button>
           <button className={styles.buttonLogOut} onClick={logOut}>
-            LogOut
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
-              <path d="M11.65 2.94154L8.86 0.151543C8.79045 0.0800948 8.70117 0.0310242 8.60357 0.0106113C8.50597 -0.00980157 8.4045 -0.000627518 8.31215 0.0369585C8.21979 0.0745445 8.14075 0.138833 8.08515 0.221597C8.02954 0.30436 7.99989 0.401834 8 0.501544V2.29154H1C0.45 2.29154 0 2.74154 0 3.29154C0 3.84154 0.45 4.29154 1 4.29154H8V6.08154C8 6.53154 8.54 6.75154 8.85 6.43154L11.64 3.64154C11.84 3.45154 11.84 3.13154 11.65 2.94154Z" fill="white"/>
+            Logout
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="#29E33C" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2H8C8.55 2 9 1.55 9 1C9 0.45 8.55 0 8 0H2C0.9 0 0 0.9 0 2V16C0 17.1 0.9 18 2 18H8C8.55 18 9 17.55 9 17C9 16.45 8.55 16 8 16H2V2Z" fill="#29E33C" />
+              <path d="M17.65 8.94154L14.86 6.15154C14.7905 6.08009 14.7012 6.03102 14.6036 6.01061C14.506 5.9902 14.4045 5.99937 14.3121 6.03696C14.2198 6.07454 14.1408 6.13883 14.0851 6.2216C14.0295 6.30436 13.9999 6.40183 14 6.50154V8.29154H7C6.45 8.29154 6 8.74154 6 9.29154C6 9.84154 6.45 10.2915 7 10.2915H14V12.0815C14 12.5315 14.54 12.7515 14.85 12.4315L17.64 9.64154C17.84 9.45154 17.84 9.13154 17.65 8.94154Z" fill="#29E33C" />
             </svg>
+
           </button>
         </div>
         <div>
-        
+
         </div>
       </form>
       <Navbar />
