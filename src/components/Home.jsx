@@ -10,7 +10,7 @@ import CardAgendamento from './CardAgendamento';
 
 export default function Home() {
     const usuario = {
-        nome: 'Mateus',
+        nome: 'Diogo',
         foto: '/assets/profile-foto.png',
         peso: 75,
         altura: 173,
