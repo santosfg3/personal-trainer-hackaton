@@ -1,21 +1,4 @@
 * {
-<<<<<<< HEAD
-  margin: 0;
-  padding: 0;
-  box-sizing: 0;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
-:root {
-  --primary-color: #29E33C;
-  --bg-color: #000000;
-  --card-color: #29292E;
-  
-  height: 100vh;
-  font-size: 62.5%;
-}
-=======
     margin: 0;
     padding: 0;
     box-sizing: 0;
@@ -31,4 +14,3 @@
     height: 100vh;
     font-size: 62.5%;
   }
->>>>>>> 449d425a46413cd5f8a34849b8c9637061b24df0
