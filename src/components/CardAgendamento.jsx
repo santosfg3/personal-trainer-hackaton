@@ -25,12 +25,11 @@ const CardAgendamento = ({ userId }) => {
     };
 
     return (
-    
         <div className={styles.appointmentsContainer}>
             {appointments.map((appointment, index) => (
                 <div key={index} className={styles.appointmentCard}>
-                    <div className={styles.date}>{appointment.diaDoMes}</div>
                     <div className={styles.info}>
+                    <div>{appointment.dia}</div>
                         <div>{appointment.diaDaSemana}</div>
                         <div>{appointment.horas}</div>
                     </div>
