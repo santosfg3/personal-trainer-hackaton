@@ -9,7 +9,7 @@ const CardAgendamento = ({ userId }) => {
     useEffect(() => {
         const fetchAppointments = async () => {
             try {
-                const response = await axios.get('/api/userHora');
+                const response = await axios.get('/api/calendario/userHora');
                 const userAppointments = response.data.filter(appointment => appointment.userId === userId);
                 setAppointments(userAppointments);
             } catch (error) {
@@ -25,6 +25,7 @@ const CardAgendamento = ({ userId }) => {
     };
 
     return (
+    
         <div className={styles.appointmentsContainer}>
             {appointments.map((appointment, index) => (
                 <div key={index} className={styles.appointmentCard}>
