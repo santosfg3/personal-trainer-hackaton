@@ -51,7 +51,6 @@ export default function Events() {
     <main>
       <div className={styles.container}>
         <h1 className={styles.profileHeader}>Agenda</h1>
-        <h1>Agenda</h1>
         <div className={styles.buttonGroup}>
           {/* Aplicando a classe 'active' se o botão estiver ativo */}
           <button
