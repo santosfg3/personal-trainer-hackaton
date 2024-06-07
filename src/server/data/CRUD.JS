@@ -38,7 +38,7 @@ export async function findAllUlissesHour() {
 export async function findUserById(id) {
   if (ObjectId.isValid(id)) {
     const newID = new ObjectId(String(id));
-    const collection = await getMongoCollection(db, COLLECTION1);
+    const collection = await getMongoCollection(db, COLLECTION);
     const result = await collection.find({ _id: newID }).toArray();
 
     return result;
@@ -51,12 +51,14 @@ export async function update(id) {
     
     const collection = await getMongoCollection(db, COLLECTION2);
     const result = await collection.updateOne({ _id: new ObjectId(String(id)) },
-  {$set: {marcado: true}}
+  {$set: {marcado: true}, }
   
   );
 
     return result;
 }
+
+
 
 //11
 //0
@@ -73,4 +75,24 @@ export async function insertEvent(data) {
   const collection = await getMongoCollection(db, COLLECTION1);
   const result = await collection.insertOne(data);
   return result.insertedId;
+}
+
+export async function updateDataUser({id, name, email, telefone, peso, altura, idade}) { 
+  console.log(id, name, email, telefone, peso, altura, idade)
+  const collection = await getMongoCollection(db, COLLECTION);
+  const result = await collection.updateOne({
+      _id: new ObjectId(String(id))
+  },
+      {
+          $set: {
+              name: name,
+              email: email,
+              telefone: telefone,
+              peso: peso,
+              altura: altura,
+              idade: idade,
+
+          }
+      })
+  return result
 }

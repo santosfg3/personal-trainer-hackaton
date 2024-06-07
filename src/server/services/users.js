@@ -10,8 +10,13 @@ export async function getUserByEmail(email) {
 
 export async function createDataUser({ email, password }) {
   return {
+    name: "",
     email: email,
     password: password,
+    telefone: "",
+    peso: "",
+    altura: "",
+    idade: ""
   };
 }
 
