@@ -94,7 +94,7 @@ const Perfil = () => {
           value={formData.name}
           onChange={handleChange}
           placeholder="Nome"
-          required
+          
         />
         <input
           className={styles.formInput}
@@ -104,7 +104,7 @@ const Perfil = () => {
           id="email"
           value={formData.email}
           onChange={handleChange}
-          required
+          
         />
         <input
           className={styles.formInput}
@@ -112,7 +112,7 @@ const Perfil = () => {
           placeholder="Telefone"
           value={formData.telefone}
           onChange={handleChange}
-          required
+          
         />
 
         <div className={styles.numericContainer}>
@@ -125,7 +125,7 @@ const Perfil = () => {
               placeholder="0"
               value={formData.peso}
               onChange={handleChange}
-              required
+              
             />
             <label className={styles.label} htmlFor="peso">
               Kg
@@ -140,7 +140,7 @@ const Perfil = () => {
               placeholder="0"
               value={formData.altura}
               onChange={handleChange}
-              required
+              
             />
             <label className={styles.label} htmlFor="altura">
               cm
