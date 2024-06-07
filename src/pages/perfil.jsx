@@ -31,6 +31,7 @@ const Perfil = () => {
         const res = await fetch(`/api/${token}`);
         if (res.status === 200) {
           const profile = await res.json();
+          console.log(profile)
           setFormData({
             name: profile[0]?.name || "",
             email: profile[0]?.email || "",
@@ -45,7 +46,7 @@ const Perfil = () => {
       }
     }
     handleProfile();
-  }, [updateUser]);
+  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -67,7 +68,14 @@ const Perfil = () => {
 
     if (res.status === 200) {
       const updatedProfile = await res.json();
-      setFormData(updatedProfile);
+      setFormData({
+        name: updatedProfile.name,
+        email: updatedProfile.email,
+        telefone: updatedProfile.telefone,
+        peso: updatedProfile.peso,
+        altura: updatedProfile.altura,
+        idade: updatedProfile.idade,
+      });
       setUpdateUser(!updateUser);
     }
   };
