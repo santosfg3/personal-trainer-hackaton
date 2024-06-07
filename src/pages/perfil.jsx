@@ -48,7 +48,6 @@ const Perfil = () => {
     handleProfile();
   }, [updateUser]);
 
-<<<<<<< HEAD
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -160,7 +159,6 @@ const Perfil = () => {
               anos
             </label>
           </div>
-=======
             <div className={styles.numericContainer}>
                 <div className={styles.numericBox}>
                     <input className={styles.numericInput} type="number" id="peso" placeholder="0" required />
@@ -177,7 +175,6 @@ const Perfil = () => {
             </div>
                 <div><button className={styles.buttonLogOut} >Logout</button></div>
                 <Navbar/>
->>>>>>> 1b1a7ddd3201e1335813d1c42983783fa5d12e1c
         </div>
         <div>
           <button className={styles.buttonLogOut} onClick={() => logOut()}>
