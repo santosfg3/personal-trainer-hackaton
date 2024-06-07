@@ -31,6 +31,7 @@ const CardAgendamento = ({ userId }) => {
                     <div className={styles.info}>
                     <div>{appointment.dia}</div>
                         <div>{appointment.diaDaSemana}</div>
+                        <p className={styles.personalName}>Ulisses <br /> Personal Trainer</p>
                         <div>{appointment.horas}</div>
                     </div>
                     <button className={styles.cancelButton} onClick={() => handleCancel(index)}>

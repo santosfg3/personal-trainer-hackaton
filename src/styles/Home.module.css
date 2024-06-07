@@ -5,6 +5,7 @@
     height: 100vh;
     overflow: hidden;
     font-family: "Poppins", sans-serif;
+    padding-bottom: 8rem;
 }
 
 .header {
@@ -78,4 +79,11 @@
     font-weight: 500;
     align-self: flex-start;
     margin: 3.3rem 0 1.3rem 3.3rem;
+}
+
+.subtitleTwo{
+    color: #FFF;
+    font-weight: 500;
+    align-self: flex-start;
+    margin: 3.3rem 0 0 3.3rem;
 }
