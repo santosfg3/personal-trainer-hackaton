@@ -16,6 +16,7 @@ export default function Home() {
         altura: 173,
         idade: 25,
     };
+    const userId = 1
 
     return (
         <div className={styles.container}>
@@ -45,6 +46,9 @@ export default function Home() {
             <div className={styles.weekCheck}>
                 <h2 className={styles.subtitle}>Sua semana de treinos</h2>
                 <CompleteWeek />
+            </div>
+            <div> 
+                <CardAgendamento  userId={userId}/>
             </div>
         </div>
     )
