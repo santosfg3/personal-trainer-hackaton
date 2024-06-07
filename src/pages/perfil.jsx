@@ -5,9 +5,9 @@ import { useRouter } from "next/router";
 import Navbar from "@/components/Navbar";
 
 const Perfil = () => {
-//   useAnimateValue("peso", 0, 70, 2000);
-//   useAnimateValue("altura", 0, 175, 2000);
-//   useAnimateValue("anos", 0, 30, 2000);
+  // useAnimateValue('peso', 0, 70, 2000);
+  // useAnimateValue('altura', 0, 175, 2000);
+  // useAnimateValue('anos', 0, 30, 2000);
 
   const router = useRouter();
   const [updateUser, setUser] = useState(false);
@@ -94,6 +94,7 @@ const Perfil = () => {
           value={formData.name}
           onChange={handleChange}
           placeholder="Nome"
+          required
         />
         <input
           className={styles.formInput}
@@ -103,6 +104,7 @@ const Perfil = () => {
           id="email"
           value={formData.email}
           onChange={handleChange}
+          required
         />
         <input
           className={styles.formInput}
@@ -110,6 +112,7 @@ const Perfil = () => {
           placeholder="Telefone"
           value={formData.telefone}
           onChange={handleChange}
+          required
         />
 
         <div className={styles.numericContainer}>
@@ -122,6 +125,7 @@ const Perfil = () => {
               placeholder="0"
               value={formData.peso}
               onChange={handleChange}
+              required
             />
             <label className={styles.label} htmlFor="peso">
               Kg
@@ -136,6 +140,7 @@ const Perfil = () => {
               placeholder="0"
               value={formData.altura}
               onChange={handleChange}
+              required
             />
             <label className={styles.label} htmlFor="altura">
               cm
@@ -153,28 +158,12 @@ const Perfil = () => {
             />
             <label
               className={styles.label}
-              htmlFor="anos"
+              htmlFor="idade"
               onChange={handleChange}
             >
               anos
             </label>
           </div>
-            <div className={styles.numericContainer}>
-                <div className={styles.numericBox}>
-                    <input className={styles.numericInput} type="number" id="peso" placeholder="0" required />
-                    <label className={styles.label} htmlFor="peso">Kg</label>
-                </div>
-                <div className={styles.numericBox}>
-                    <input className={styles.numericInput} type="number" id="altura" placeholder="0" required />
-                    <label className={styles.label} htmlFor="altura">cm</label>
-                </div>
-                <div className={styles.numericBox}>
-                    <input className={styles.numericInput} type="number" id="anos" placeholder="0" required />
-                    <label className={styles.label} htmlFor="anos">anos</label>
-                </div>
-            </div>
-                <div><button className={styles.buttonLogOut} >Logout</button></div>
-                <Navbar/>
         </div>
         <div>
           <button className={styles.buttonLogOut} onClick={() => logOut()}>
@@ -182,11 +171,12 @@ const Perfil = () => {
           </button>
         </div>
         <div>
-          <button className={styles.buttonSave} type="submit ">
+          <button className={styles.buttonSave} type="submit">
             save
           </button>
         </div>
       </form>
+      <Navbar />
     </div>
   );
 };
