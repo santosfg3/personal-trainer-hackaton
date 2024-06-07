@@ -22,7 +22,7 @@ export async function createDataUser({ email, password }) {
 
 export async function user(id) {
   const result = await findUserById(id);
-  if (result === null) return false;
+  if (result.length === 0) return false;
 
   return result;
 }

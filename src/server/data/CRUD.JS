@@ -36,14 +36,11 @@ export async function findAllUlissesHour() {
 
 
 export async function findUserById(id) {
-  if (ObjectId.isValid(id)) {
     const newID = new ObjectId(String(id));
     const collection = await getMongoCollection(db, COLLECTION);
     const result = await collection.find({ _id: newID }).toArray();
 
     return result;
-  }
-  return null;
 }
 
 export async function update(id) {
