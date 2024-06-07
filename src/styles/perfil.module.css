@@ -3,12 +3,13 @@
   color: white;
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 20px;
-  height: 100vh;
+  height: 94vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+ padding-bottom: 55px;
+ 
 }
 
 .profileHeader {
