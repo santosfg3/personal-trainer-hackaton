@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/perfil.module.css";
 import useAnimateValue from "../pages/hooks/useAnimateValue";
 import { useRouter } from "next/router";
+import Navbar from "@/components/Navbar";
 
 const Perfil = () => {
 //   useAnimateValue("peso", 0, 70, 2000);
@@ -47,6 +48,7 @@ const Perfil = () => {
     handleProfile();
   }, [updateUser]);
 
+<<<<<<< HEAD
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
@@ -158,6 +160,24 @@ const Perfil = () => {
               anos
             </label>
           </div>
+=======
+            <div className={styles.numericContainer}>
+                <div className={styles.numericBox}>
+                    <input className={styles.numericInput} type="number" id="peso" placeholder="0" required />
+                    <label className={styles.label} htmlFor="peso">Kg</label>
+                </div>
+                <div className={styles.numericBox}>
+                    <input className={styles.numericInput} type="number" id="altura" placeholder="0" required />
+                    <label className={styles.label} htmlFor="altura">cm</label>
+                </div>
+                <div className={styles.numericBox}>
+                    <input className={styles.numericInput} type="number" id="anos" placeholder="0" required />
+                    <label className={styles.label} htmlFor="anos">anos</label>
+                </div>
+            </div>
+                <div><button className={styles.buttonLogOut} >Logout</button></div>
+                <Navbar/>
+>>>>>>> 1b1a7ddd3201e1335813d1c42983783fa5d12e1c
         </div>
         <div>
           <button className={styles.buttonLogOut} onClick={() => logOut()}>
