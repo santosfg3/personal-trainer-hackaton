@@ -57,6 +57,7 @@
 .input {
   display: flex;
   gap: 8rem;
+  color: #FFF;
   width: 30.8rem;
   height: 2.4rem;
   padding: 1.6rem;
