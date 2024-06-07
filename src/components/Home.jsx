@@ -5,6 +5,7 @@ import PesoIcon from '../../public/icons/PesoIcon';
 import AlturaIcon from '../../public/icons/AlturaIcon';
 import IdadeIcon from '../../public/icons/IdadeIcon';
 import CompleteWeek from './CompleteWeek';
+import CardAgendamento from './CardAgendamento';
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
         nome: 'Mateus',
         foto: '/assets/profile-foto.png',
         peso: 75,
-        altura: "1,73",
+        altura: 173,
         idade: 25,
     };
 
@@ -20,7 +21,7 @@ export default function Home() {
         <div className={styles.container}>
             <div className={styles.header}>
                 <Image src={usuario.foto} alt={usuario.nome} width={60} height={60} />
-                <h1 className={styles.personalInfos}>Hello, <br /> <span>{usuario.nome}!</span></h1>
+                <h1 className={styles.personalInfos}>Olá, <br /> <span>{usuario.nome}!</span></h1>
                 <NotificationIcon />
             </div>
                 <h1 className={styles.title}>Transforme seus objetivos em conquistas</h1>
